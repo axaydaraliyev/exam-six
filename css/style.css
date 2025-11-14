@@ -158,18 +158,6 @@ body {
 }
 
 .address,
-.company {
-  margin-top: 0.8rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid #eee;
-}
-
-.company-name {
-  font-weight: 600;
-  color: #4e73df;
-  display: block;
-  margin-bottom: 0.3rem;
-}
 /* search  */
 .input-wrapper {
   width: 100%;

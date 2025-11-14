@@ -34,12 +34,6 @@ const updateUi = function (users) {
         <span>${address.street}, ${address.suite}</span>
         <span>${address.city}, ${address.zipcode}</span>
       </div>
-
-      <div class="company">
-        <span class="company-name">🏢 ${company.name}</span>
-        <span><i>${company.catchPhrase}</i></span>
-        <span>"${company.bs}"</span>
-      </div>
     `;
 
       listEl.append(li);
