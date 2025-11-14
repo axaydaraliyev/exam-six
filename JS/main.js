@@ -10,7 +10,7 @@ async function getData() {
 }
 
 const listEl = document.querySelector(".list");
-const input = document.querySelector(".input")
+const input = document.querySelector(".input");
 
 const updateUi = function (users) {
   if (!users) return;
@@ -19,7 +19,7 @@ const updateUi = function (users) {
   users.forEach(
     ({ name, username, email, phone, website, address, company }) => {
       const li = document.createElement("li");
-      li.classList.add("card")
+      li.classList.add("card");
 
       li.innerHTML = `
       <h2>${name}</h2>
@@ -45,13 +45,12 @@ const updateUi = function (users) {
       listEl.append(li);
     }
   );
-  
 };
 // input.addEventListener("input", ()=>{
 //   const newData = data.filter((name)={
 //     return name.toLowerCase().includes(input.value.trim().toLowerCase())
 //   })
-  
+
 // })
 
 getData();
