@@ -1,11 +1,7 @@
+let data = [];
 async function getData() {
   let response = await fetch("https://jsonplaceholder.typicode.com/users");
-
-  if (!response.ok) {
-    throw new Error("Xatolik yuz berdi: " + response.status);
-  }
-
-  let data = await response.json();
+  data = await response.json();
   updateUi(data);
 }
 
@@ -40,11 +36,12 @@ const updateUi = function (users) {
     }
   );
 };
-// input.addEventListener("input", ()=>{
-//   const newData = data.filter((name)={
-//     return name.toLowerCase().includes(input.value.trim().toLowerCase())
-//   })
-
-// })
+input.addEventListener("input", () => {
+  const value = input.value.trim().toLowerCase();
+  const filteredData = data.filter((item) =>
+    item.name.toLowerCase().includes(value)
+  );
+  updateUi(filteredData);
+});
 
 getData();
