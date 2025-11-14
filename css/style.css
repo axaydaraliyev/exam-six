@@ -1,0 +1,178 @@
+:root {
+  --white: #f5f6fa;
+  --black: #1b1b1b;
+  --primary: #003366;
+  --accent: #00aaff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --backgraund: rgba(0, 170, 255);
+}
+
+/* Asosiy sozlamalar */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background: linear-gradient(135deg, #4e73df, #1cc88a);
+  
+  color: var(--black);
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+/* Header */
+.header {
+ background: rgba(0,0,0,0.25);
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--black);
+}
+
+/* Main */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex: 1;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--black);
+}
+
+
+
+/* card  */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 4rem;
+}
+
+.list li {
+  border-radius: 0.75rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px var(--shadow);
+  padding: 1.2rem 1.5rem;
+  transition: all 0.3s ease;
+  list-style: none;
+}
+
+.list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+
+
+.list h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+.list p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.list span {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.address,
+.company {
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #eee;
+}
+
+.company-name {
+  font-weight: 600;
+  color: #4e73df;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+  
