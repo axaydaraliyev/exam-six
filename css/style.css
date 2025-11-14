@@ -17,19 +17,18 @@
 }
 
 body {
-   background: linear-gradient(135deg, #4e73df, #1cc88a);
-  
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+
   color: var(--black);
   font-family: "Segoe UI", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
 
 /* Header */
 .header {
- background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   color: #fff;
   padding: 1rem 0;
   box-shadow: 0 4px 10px var(--shadow);
@@ -81,7 +80,7 @@ body {
 
 /* Footer */
 .footer {
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
@@ -117,8 +116,6 @@ body {
   color: var(--black);
 }
 
-
-
 /* card  */
 .list {
   display: grid;
@@ -140,8 +137,6 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
 }
-
-
 
 .list h2 {
   font-weight: 700;
@@ -175,4 +170,32 @@ body {
   display: block;
   margin-bottom: 0.3rem;
 }
-  
+/* search  */
+.input-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 18px;
+  background: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  outline: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.input::placeholder {
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.input:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 0 4px rgba(78, 115, 223, 0.25);
+}

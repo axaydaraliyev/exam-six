@@ -10,6 +10,7 @@ async function getData() {
 }
 
 const listEl = document.querySelector(".list");
+const input = document.querySelector(".input")
 
 const updateUi = function (users) {
   if (!users) return;
@@ -44,5 +45,13 @@ const updateUi = function (users) {
       listEl.append(li);
     }
   );
+  
 };
+// input.addEventListener("input", ()=>{
+//   const newData = data.filter((name)={
+//     return name.toLowerCase().includes(input.value.trim().toLowerCase())
+//   })
+  
+// })
+
 getData();
